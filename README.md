@@ -37,3 +37,6 @@ How to Run This Project
 •	Run the python pin_point.py script
 Make sure the server is active before running the script. The script will loop through 3-digit PINs and stop when the correct one is found.
 
+VIDEO PRESENTATION LINK IN GDRIVE 
+https://drive.google.com/drive/folders/12CCciAZoOA2D-KBo_o2tfZK0yP67aHMd?usp=sharing
+
