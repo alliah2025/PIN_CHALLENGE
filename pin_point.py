@@ -22,3 +22,13 @@ def try_pin(pin):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
         sock.connect((HOST, PORT))
         sock.sendall(request.encode())
+
+        response = b""
+        while True:
+            chunk = sock.recv(1024)
+            if not chunk:
+                break
+            response += chunk
+
+    decoded = response.decode(errors="ignore")
+    return decoded, pin_str
