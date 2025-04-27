@@ -40,8 +40,5 @@ for pin in range(1000):
     if "Incorrect number" not in response: # if there is no response that says "Incorrect number then that PIN is the correct PIN
         print(f"\nFound the correct PIN: {pin_str}") #mission accomplished 
 
-    if "Incorrect number" not in response:
-        print(f"\nFound the correct PIN: {pin_str}")
-        break
 
     time.sleep(DELAY)
