@@ -37,8 +37,13 @@ for pin in range(1000):
     response, pin_str = try_pin(pin) #loop through all possible 3 digit pin combination
     print(f"Try pin {pin_str}...") #print out all current pin being tried
 
+<<<<<<< HEAD
     if "Incorrect number" not in response: # if there is no response that says "Incorrect number then that PIN is the correct PIN
         print(f"\nFound the correct PIN: {pin_str}") #mission accomplished 
+=======
+    if "Incorrect number" not in response:
+        print(f"\nFound the correct PIN: {pin_str}")
+>>>>>>> 7d8cf950346b7473736eda19eb0b401685195b89
         break
 
     time.sleep(DELAY)
