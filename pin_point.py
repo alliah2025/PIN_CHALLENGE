@@ -40,3 +40,5 @@ for pin in range(1000):
     if "Incorrect number" not in response:
         print(f"\nFound the correct PIN: {pin_str}")
         break
+
+    time.sleep(DELAY)
