@@ -18,3 +18,7 @@ def try_pin(pin):
         f"\r\n"
         f"{data}"
     )
+
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+        sock.connect((HOST, PORT))
+        sock.sendall(request.encode())
